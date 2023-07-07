@@ -14,7 +14,7 @@ export class SingeShopComponent implements OnInit {
 
   constructor(private route:ActivatedRoute,private service:ShopService){}
   ngOnInit(): void {
-    this.route.params.subscribe(params=>this.service.fetchOne(params['id'].subscribe((data: Product)=>this.prod =data)))
+    this.route.params.subscribe(params=>this.service.recProd(params['id'].subscribe((data: Product)=>this.prod =data)))
   }
 }
 
