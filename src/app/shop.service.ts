@@ -25,9 +25,9 @@ export class ShopService {
     return this.http.patch<Shop>(environment.serverUrl+'/api/shop/'+shop.id,shop)
   }
   recProd(id:number){
-    return this.http.get<Product>(environment.serverUrl+'/api/shop/product/'+id)
+    return this.http.get<Product[]>(environment.serverUrl+'/api/shop/product/'+id)
   }
   recOrd(id:number){
-    return this.http.get<Order>(environment.serverUrl+'/api/shop/order/'+id)
+    return this.http.get<Order[]>(environment.serverUrl+'/api/shop/order/'+id)
   }
 }

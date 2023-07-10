@@ -25,4 +25,7 @@ export class OptionService {
   update(option:Option){
     return this.http.patch<Option>(environment.serverUrl+'/api/option/'+option.id,option)
   }
+  fetchAllByProd(id:number){
+    return this.http.get<Option[]>(environment.serverUrl+'/api/option/ofProd/'+id);
+  }
 }

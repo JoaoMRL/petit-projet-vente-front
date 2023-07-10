@@ -1,6 +1,19 @@
-<div *ngIf="prod">
-    <h1>{{prod.label}}</h1>
 
+<div *ngIf="prod" class="card">
+    <ng-container *ngFor="let item of prod">
+        <div class="bord">
+            <h1 class="card-title">{{item.label}}</h1>
+            <img src="" alt="">
+            <p> {{item.description}} </p>
+            <p>{{item.basePrice}} €</p>
+
+            <label for="lesOptions">Games:</label>
+            <input type="text" id="lesOptions" list="item.id" (focus)="options(item.id)">
+            <datalist id="item.id">
+                <option *ngFor="let iten of option" value="{{iten.label}}"></option>
+            </datalist> 
+        </div>
+    </ng-container>
 </div>
 
 <div *ngIf="!prod">

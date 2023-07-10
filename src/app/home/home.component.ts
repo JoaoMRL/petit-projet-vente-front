@@ -19,5 +19,4 @@ export class HomeComponent implements OnInit {
     this.service.add(shop).subscribe(data=>this.list.push(data));
   }
   
-
 }

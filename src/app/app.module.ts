@@ -7,13 +7,17 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { ShopItemComponent } from './shop-item/shop-item.component';
 import { SingeShopComponent } from './singe-shop/singe-shop.component';
+import { CreateShopComponent } from './create-shop/create-shop.component';
+import { CreateProductComponent } from './create-product/create-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ShopItemComponent,
-    SingeShopComponent
+    SingeShopComponent,
+    CreateShopComponent,
+    CreateProductComponent
   ],
   imports: [
     BrowserModule,
