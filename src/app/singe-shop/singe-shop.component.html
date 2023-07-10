@@ -1,9 +1,11 @@
-
+<div>
+    <a routerLink="/product/{{idRoute}}">Create product</a>
+</div>
 <div *ngIf="prod" class="card">
     <ng-container *ngFor="let item of prod">
         <div class="bord">
             <h1 class="card-title">{{item.label}}</h1>
-            <img src="" alt="">
+            <img *ngIf="item.picture" src="{{serverUrl}}/uploads/{{item.picture}}" alt="">
             <p> {{item.description}} </p>
             <p>{{item.basePrice}} €</p>
 

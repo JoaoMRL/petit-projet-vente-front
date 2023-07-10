@@ -9,7 +9,7 @@ import { CreateShopComponent } from './create-shop/create-shop.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'shop/:id',component:SingeShopComponent},
-  {path:'product', component:CreateProductComponent},
+  {path:'product/:id', component:CreateProductComponent},
   {path:'shoppy', component:CreateShopComponent}
 ];
 

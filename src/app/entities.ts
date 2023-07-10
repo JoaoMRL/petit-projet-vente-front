@@ -5,6 +5,7 @@ export interface Product{
     label:string;
     basePrice:number;
     description:string;
+    picture:string;
     id_shop:number;
 }
 export interface Shop{
